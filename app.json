@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/myself/myself",
+    "pages/cat/cat",
+    "pages/shop_cart/shop_cart",
+    "pages/webview/webview"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 20
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff4e44",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "active": false
+      },
+      {
+        "pagePath": "pages/cat/cat",
+        "active": false
+      },
+      {
+        "pagePath": "pages/shop_cart/shop_cart",
+        "active": false
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "active": false
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  }
+}

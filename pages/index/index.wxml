@@ -1,0 +1,62 @@
+<import src="../../template/common/list.wxml" />
+<!-- 顶部店铺信息 -->
+<view class='store_info weui-cell'>
+  <view class='weui-cell__hd'>
+    <view class='store_pic'>
+      <image src="../../images/yidong/store_pic.png" mode="widthFix"></image>
+    </view>
+    <view class='txt'>
+      <text class='products_num'>666</text>件商品</view>
+  </view>
+  <view class='weui-cell__bd'>
+    <view class='store_name'>元通大厦旗舰营大厦元通大厦</view>
+    <view>相关描述
+      <text></text>(4.7分)</view>
+    <view>服务态度
+      <text></text>(4.7分)</view>
+    <view class='contact'>
+      <image class='phone' mode="widthFix" src="../../images/yidong/phone.png"></image>0574-23456789
+      <text>实体体验店</text>
+    </view>
+  </view>
+  <view class='weui-cell__ft'>
+    <view class="space-line"></view>
+    <view>
+      <image class='kefu' mode='widthFix' src='../../images/yidong/kefu.png'></image>
+      <view>客服</view>
+    </view>
+
+  </view>
+</view>
+<!-- 地址 -->
+<view class='line weui-cell'>
+  <view></view>
+</view>
+<view class='add weui-cell'>
+  <view class='weui-cell__hd'>
+    <image class="locaiton" src="../../images/yidong/location.png" mode='widthFix'></image>
+  </view>
+  <view class='weui-cell__bd'>浙江宁波市鄞州区四明中路万达商城四中路</view>
+  <view class='weui-cell__ft'>15.2km</view>
+</view>
+<!-- 轮播广告 -->
+<view class='weui-cell ad'>
+  <swiper class="swiper-box" indicator-dots="{{  indicatorDots }}" indicator-color="{{indicatorColor}}" autoplay="{{  autoplay}}" vertical="{{  vertical }}" interval="{{  interval }}" duration="{{ duration }}" circular="{{ circular}}">
+    <block wx:for="{{imgUrls}}" wx:key="key" wx:for-item="item">
+      <swiper-item>
+        <navigator>
+          <image src="{{item.image}}" mode="widthFix"></image>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 优惠券 -->
+<view class='coupon weui-cell'>
+    <view class='weui-cell__bd'>
+        <image class='coupon-pic' src='../../images/yidong/coupon.jpg' mode='widthFix'></image>
+    </view>
+    <view class='weui-cell__ft'>
+        <text>领券中心</text><image class='more-icon' src='../../images/yidong/right.png' mode='widthFix'></image>
+    </view>
+</view>
